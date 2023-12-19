@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    padding: 60px 0 40px 0;
+
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+
+    main {
+        background-color: black;
+
+        .card {
+            border: 3px solid white;
+            color: white;
+
+            .card-title {
+                b {
+                    font-size: 30px;
+                }
+            }
+
+            .card-body {
+                background-color: rgb(55, 55, 55);
+                text-align: center;
+            }
+
+            ._status {
+                font-size: 20px;
+            }
+
+            ._status.alive {
+                color: green;
+                font-weight: bold;
+                /* Estilos específicos para el elemento con la clase _status cuando el estado es "alive" */
+            }
+
+            ._status.dead {
+                color: red;
+                font-weight: bold;
+                /* Estilos específicos para el elemento con la clase _status cuando el estado es "dead" */
+            }
+
+            ._status.unknown {
+                color: rgb(134, 134, 134);
+                font-weight: bold;
+                /* Estilos específicos para el elemento con la clase _status cuando el estado es "unknown" */
+            }
+
+        }
+
+        #resultado {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-gap: 40px;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            
+        }
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        padding: 10px;
+        text-align: center;
+        #pagina {
+            width: 8%;
+            text-align: center;
+            background-color: rgb(54, 54, 54);
+            color: white;
+        }
+
+
+    } 
+};
